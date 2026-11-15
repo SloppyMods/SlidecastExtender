@@ -1,0 +1,30 @@
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+    <AssemblyName>SlidecastExtender</AssemblyName>
+    <RootNamespace>SlidecastExtender.Plugin</RootNamespace>
+    <Version>0.1.0.0</Version>
+    <Description>Wire-side FFXIV slidecast prototype: suppress Move during a cast, flush the real position on resolve. Local-side gate deferred (M1).</Description>
+    <TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <Nullable>enable</Nullable>
+    <LangVersion>13</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath>$(AppData)\XIVLauncher\devPlugins\SlidecastExtender\</OutputPath>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <!-- DalamudPackager 15 generates the manifest from these properties (a hand-written
+         .json manifest is neither read nor valid here — the DLL name, manifest name, and
+         InternalName must all be "SlidecastExtender"). -->
+    <Author>SloppyMods</Author>
+    <Name>Slidecast Extender</Name>
+    <Punchline>Keep the server-side cast alive while you walk; the local bar survives in M1</Punchline>
+    <DalamudApiLevel>15</DalamudApiLevel>
+    <Tags>ffxiv, casting, network, prototype</Tags>
+    <CategoryTags>development</CategoryTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SlidecastExtender.Core\SlidecastExtender.Core.csproj" />
+  </ItemGroup>
+</Project>
+

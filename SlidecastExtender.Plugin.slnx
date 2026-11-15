@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/SlidecastExtender.Core/SlidecastExtender.Core.csproj" />
+  <Project Path="src/SlidecastExtender.Plugin/SlidecastExtender.Plugin.csproj" />
+</Solution>

@@ -1,0 +1,9 @@
+bin/
+obj/
+.quality-gate/
+TestResults/
+*.user
+*.suo
+.vs/
+logs/
+*.log
